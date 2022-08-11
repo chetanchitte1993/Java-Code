@@ -1,0 +1,634 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+           <title>My Profile</title>
+            
+           <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css" />
+           
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+          
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript" language="javascript"></script>
+    
+           <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+           <script src="JS/wow.min.js" type="text/javascript"></script>
+           <link href="CSS/animate.css" rel="stylesheet" type="text/css" />
+           
+		   <script type="text/javascript">
+                new WOW().init();
+           </script>
+
+           <style type="text/css">
+                #HeaderDiv a.navbar-brand
+	            {
+	                font-family:Monotype Corsiva;
+	                font-size:25px;    
+	                color:#ffffff;
+	            }
+	            #navbarCollapse li b
+	            {
+	                color:#ffffff;
+	            }
+	            
+                .fullscreen_bg 
+                {
+                    position:relative;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    overflow:hidden;
+                    z-index:-1;
+                }
+
+                .fullscreen_bg_video 
+                {
+                    position:absolute;
+                    width: auto;
+                    height: auto;
+                    min-width: 100%;
+	                min-height: 100%;
+	            }
+	            
+	            #Home
+	            {
+	                height:auto;
+	                padding-bottom:40px;
+	                color:rgba(12, 11, 11, 0.945);
+	                font-weight:bold
+	            }
+	            
+	            #HomeRow
+	            {
+	                padding-top:7%;   
+	            }
+	            #HomeRow a i.fa
+	            {
+	                color:#ffffff;
+	            }
+	            
+	            #HomeRow div.col-lg-offset-3
+	            {
+	                background:rgba(231, 212, 212, 0.7); 
+
+	                padding-top:20px;
+	                padding-bottom:20px;
+	                border-radius:5px;
+	                box-shadow:0px 0px 10px rgb(168, 164, 164);   
+	            }
+	            
+	            #TechnicalSummary
+	            {
+	                height:auto;
+	                padding-bottom:40px;
+	                color:#fff;
+	                background-attachment:fixed;
+	                background-image:url('Images/10.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:20px;
+	                line-height:1.5;
+	            }
+	            #TechnicalSummaryRow
+	            {
+	                padding-top:7%;
+	            }
+	            #TechnicalSummary h1
+	            {
+	                font-family:Monotype Corsiva;
+	            }
+	            
+	            #Qualifications
+	            {
+	                background-attachment:fixed;
+	                background-image:url('Images/06.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:20px;
+	                padding-bottom:40px;
+	                color:#000000;
+	            }
+	            #QualificationsRow
+	            {
+	                 margin-top:100px;
+	                 margin-bottom:100px;
+	            }
+	            #QualificationsRow div.col-lg-offset-1
+	            {
+	                padding:10px;
+	                background-color:rgba(255,255,255,0.8);
+	                border-radius:8px;
+	                box-shadow:0px 0px 18px blue;
+	                
+	            }
+	            #Qualifications table
+	            {
+	                width:100%;
+	                margin-top:50px;
+	            }
+	            #Qualifications table tr td
+	            {
+	                padding-bottom:20px;
+	            }
+	            #Qualifications table tr td:first-child
+	            {
+	                width:30%;
+	                padding-left:10px;
+	            }
+	            
+	            #Skills
+	            {
+	                background-attachment:fixed;
+	                background-image:url('Images/06.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:20px;
+	                padding-bottom:40px;
+	                color:#000000;
+	            }
+	            #SkillsRow
+	            {
+	                 margin-top:100px;
+	                 margin-bottom:100px;
+	            }
+	            #SkillsRow div.col-lg-offset-5
+	            {
+	                padding:10px;
+	                background-color:#DCDCDC;
+	                border-radius:8px;
+	                box-shadow:0px 0px 18px blue;
+	                opacity:0.8;
+	            }
+	            #Skills table
+	            {
+	                width:100%;
+	                margin-top:50px;
+	            }
+	            #Skills table tr td
+	            {
+	                padding-bottom:20px;
+	            }
+	            #Skills table tr td:first-child
+	            {
+	                width:30%;
+	                padding-left:10px;
+	            }
+	            
+	            #Noncollegiate
+	            {
+	                background-attachment:fixed;
+	                background-image:url('Images/Qualifications_Image.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:20px;
+	                padding-bottom:40px;
+	                color:#000000;
+	            }
+	            #NoncollegiateRow
+	            {
+	                 margin-top:100px;
+	                 margin-bottom:100px;
+	            }
+	            #NoncollegiateRow div.col-lg-offset-1
+	            {
+	                padding:10px;
+	                background-color:#DCDCDC;
+	                border-radius:8px;
+	                box-shadow:0px 0px 18px blue;
+	                opacity:0.8;
+	            }
+	            #Noncollegiate table
+	            {
+	                width:100%;
+	                margin-top:50px;
+	            }
+	            #Noncollegiate table tr td
+	            {
+	                padding-bottom:20px;
+	            }
+	            #Noncollegiate table tr td:first-child
+	            {
+	                width:30%;
+	                padding-left:10px;
+	            }
+	            
+	            #Experience
+	            {
+	                background-attachment:fixed;
+	                background-image:url('Images/06.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:20px;
+	                padding-bottom:40px;
+	                color:#000000;
+	            }
+	            #ExperienceRow
+	            {
+	                 margin-top:100px;
+	                 margin-bottom:100px;
+	            }
+	            #ExperienceRow div.col-lg-offset-5
+	            {
+	                padding:10px;
+	                background-color:#DCDCDC;
+	                border-radius:8px;
+	                box-shadow:0px 0px 18px blue;
+	                opacity:0.8;
+	            }
+	            #Experience table
+	            {
+	                width:100%;
+	                margin-top:50px;
+	            }
+	            #Experience table tr td
+	            {
+	                padding-bottom:20px;
+	            }
+	            #Experience table tr td:first-child
+	            {
+	                width:30%;
+	                padding-left:10px;
+	            }
+	        
+	            #Portfolio
+	            {
+	                height:auto;
+	                padding-bottom:40px;
+                    background-image:url('Images/About_Image.jpg');
+	                color:#fff;
+	                font-size:20px;
+	                
+	            }
+	           
+	            #PortfolioRow h1
+	            {
+	                color:#FDFEFE;
+	                font-family:Monotype Corsiva;
+	            }  
+	            
+	            #Portfolio div.col-lg-3
+	            {
+	                margin-bottom:20px;
+	            }  
+	            .ContainerImage
+	            {
+                    position: relative;
+                    width:100%;
+                }
+                .image 
+                {
+                  display: block;
+                  width: 100%;
+                  height: 200px;
+				  transition:1s;
+                }
+
+                .overlay 
+                {
+                  position: absolute;
+                  left: 0;
+                  bottom: 0;
+                  top: 0;
+                  right:0;
+                  background:rgba(0,0,0,0.7);
+                  overflow: hidden;
+                  height: 100%;
+                  width:100%;
+                  opacity:0;
+                  transition:0.5s;
+                }
+                .ContainerImage:hover .overlay 
+                {
+                  opacity:1;
+                }
+				.ContainerImage:hover .image 
+                {
+                  transform:rotate(360deg);
+                }
+                .text 
+                {
+                  color: white;
+                  font-size: 20px;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  -ms-transform: translate(-50%, -50%);
+                  text-align: center;
+                }
+                
+                #FreelancingRole
+	            {
+	                height:auto;
+	                color:#fff;
+	                background-attachment:fixed;
+	                background-image:url('Images/FreelancingRole_Image.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:20px;
+	                
+	            }
+	            #FreelancingRoleRow
+	            {
+	                background:rgba(0,0,0,0.8);
+	                padding-top:10%;
+	                padding-bottom:10%;
+	            }
+	            #FreelancingRoleRow div.col-lg-3
+	            {
+	                text-align:center;
+	            }
+	            #FreelancingRoleRow div.col-lg-3 i.fa
+	            {
+	                color:Orange;
+	            }
+	            #FreelancingRole h1
+	            {
+	                font-family:Monotype Corsiva;
+	            }
+                
+	            @media(max-width:768px)
+	            {
+	                .fullscreen_bg_video 
+                    {
+                        left:-160%;
+                        width:260%;
+                    }
+                    #TechnicalSummary
+                    {
+                        height:auto;    
+                    }
+                }
+                @media(max-width:992px)
+                {
+                    #HomeRow
+	                {
+	                 padding-top:17%;    
+	                }    
+	                #TechnicalSummaryRow
+	                {
+	                 padding-top:17%;    
+	                }
+                }
+           </style>
+    </head>
+
+    <body>
+         <div>
+             <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top" style="z-index:1000;">
+                  
+                  <div class="navbar-header" id="HeaderDiv">
+                       <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                               <span class="icon-bar"></span>
+							   <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+				       </button>
+                       <a href="#" class="navbar-brand">Chetan Chitte</a>
+                  </div>
+                  <div id="navbarCollapse" class="collapse navbar-collapse">
+                       <ul class="nav navbar-nav navbar-right" style="font-size:13px;padding-right:15px;">
+                           <li><a href="#Home"><b>Intro</b></a></li>
+		                   <li><a href="#TechnicalSummary"><b>Technical Summary</b></a></li>
+                           <li><a href="#Qualifications"><b>Qualifications</b></a></li>
+                           <li><a href="#Skills"><b>Skills</b></a></li>
+                           <li><a href="#Noncollegiate"><b>Noncollegiate</b></a></li>
+                           <li><a href="#Experience"><b>Experience</b></a></li>
+                           <li><a href="#Portfolio"><b>Portfolio</b></a></li>
+                           <li><a href="#FreelancingRole"><b>Freelancing Role</b></a></li>
+					   </ul>
+                 </div>
+            </nav>
+         </div>	
+
+         <div id="Home" class="fullscreen_bg">
+              <video src="D:\chetan\Video\V2.mp4" autoplay loop muted class="fullscreen_bg_video"></video>
+              <div class="row" id="HomeRow">
+                   <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-lg-6 col-md-6 col-sm-8 col-xs-12 wow slideInDown" data-wow-duration="3s">
+                        <center><img src="Images/chetan.jpg" alt="Chetan Chitte" /></center>
+                        <center><h2>CHETAN CHITTE</h2></center>
+                        <center><h5>SOFTWARE DEVELOPER</h5><hr /></center>
+                        <div class="row">
+                            <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-5 col-md-5 col-sm-5">
+                                 <center><i class="fa fa-2x fa-phone"></i> +91- 9022199611</center>
+                            </div>
+                            <div class="col-lg-5 col-md-6 col-sm-6">
+                                 <center><i class="fa fa-2x fa-envelope"></i> <a href="mailto:chetancomp.1993@gmail.com" style="color:#131010;">chetancomp.1993@gmail.com</a></center>
+                            </div>
+                            
+                        </div><hr />
+                        <div class="row">
+                            <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+                                 <center><i class="fa fa-2x fa-map-marker"></i> Tulsai Nagar, Bhadgaon Road,Takali PC Chalisgaon Dist Jalgaon (MH) 424101.</center>
+                            </div>
+                        </div><hr />
+                        <center><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a> &nbsp;<a href="#"><i class="fa fa-2x fa-twitter-square"></i></a> &nbsp;<a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a> &nbsp;<a href="#"><i class="fa fa-2x fa-instagram"></i></a></center>
+                   </div>
+              </div>
+         </div>
+         
+         <div id="TechnicalSummary" class="container-fluid wow bounceIn" data-wow-duration="3s">
+              <div class="row" id="TechnicalSummaryRow">
+                   <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+                        <center><h1><i class="fa fa-gears"></i> Technical Summary</h1><hr /></center>
+                        <ul>
+                            <li>Comprehensive knowledge of primary development languages for instance C, C++, Java and special talent of writing highly competent programs.</li>
+                            <li>Hardware & Software Troubleshooting / Operation & Maintenance / Installation / Configuration / Customer & Technical Support / Requirement Analysis / Storage / Data Backup etc.</li>
+                            <li>Performing Installation, Upgrade, Configuration, and support of Hardware, Software, Peripherals and Network Devices in Windows environment</li>
+                            <li>Good Knowledge about MS-EXCEL, MS-POWERPOINT, MS-WORD</li>
+                            <li>Experience in delivering optimal results & business value in growth environments. Proven technical/managerial 
+                                competencies in structuring customized hardware solutions</li>
+                       </ul>
+                   </div>
+              </div>
+         </div>
+
+         <div id="Qualifications" class="container-fluid">
+              <div class="row" id="QualificationsRow">
+                   <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-6 col-md-6 col-sm-6 wow slideInLeft" data-wow-duration="3s">
+                        <center><br /><h2><i class="fa fa-object-group"></i> Education Qualification</h2><hr /></center>
+                        <table class="table table-responsive">
+                            <tr>
+                                <td>Year<br />2018-2022</td>
+                                <td>B.E. in Computer Engineering (2022)<br /> from Shri Gulabrao Deokar College of Engineering Jalgaon<br /> KBCNMU University. <br /> (Throughout First Class with Distinction).</td>
+                            </tr>
+                            <tr>
+                                <td>Year<br />2011-2016</td>
+                                <td>Diploma In Computer Engineering <br />from Sau. Shantidevi Polytechnic Chavan Chalisgaon<br /> MSBTE board.<br /> with 57.81% marks.</td>
+                            </tr>
+                            <tr>
+                                <td>Year<br />2010 - 2011</td>
+                                <td>HSC Science <br /> from Rashtriya Vidyalaya Junior College Chalisgaon, <br /> STATE BOARD NASHIK.<br /> with 50.83% marks.</td>
+                            </tr>
+                            <tr>
+                                <td>Year <br/>2009</td>
+                                <td>SSC <br> from Jayhind Madhyamik and Uccha Madhyamik Vidyalaya Chalisgaon, <br/> STATE BOARD NASHIK<br/> with 79.07% marks</td>
+                            </tr>
+                        </table>
+                   </div>
+              </div>
+         </div>
+
+         <div id="Skills" class="container-fluid">
+              <div class="row" id="SkillsRow">
+                   <div class="col-lg-offset-5 col-md-offset-5 col-sm-offset-5 col-lg-6 col-md-6 col-sm-6 wow slideInRight" data-wow-duration="3s">
+                        <center><br /><h2><i class="fa fa-object-group"></i> Technical Skills</h2><hr /></center>
+                        <table>
+                            <tr>
+                                <td>Programming Languages:</td>
+                                <td>HTML, C, C++, Java, JavaScript, JQuery, Android, Python, AI, Machine learning</td>
+                            </tr>
+                        
+                            <tr>
+                                <td>Databases:</td>
+                                <td> Microsoft SQL Server, Microsoft Office.</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Operating Systems:</td>
+                                <td>Microsoft Windows.</td>
+                            </tr>
+                            <tr>
+                                <td>Networking:</td>
+                                <td>CCNA</td>
+                            </tr>
+                        </table>
+                   </div>
+              </div>
+         </div>
+
+         <div id="Noncollegiate" class="container-fluid">
+              <div class="row" id="NoncollegiateRow">
+                   <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-6 col-md-6 col-sm-6 wow slideInLeft" data-wow-duration="3s">
+                        <center><br /><h2><i class="fa fa-object-group"></i> Training and Workshops</h2><hr /></center>
+                        <table>
+                            <tr>
+                                <td>Year <br/> 2013 </td>
+                                <td>Workshop on Developing Web Application in Java & Blog Designing <br/> Line Software Solution Chalisgaon <br/> </td>
+                            </tr>
+                            <tr>
+                                <td>Year <br/> 2016 </td>
+                                <td>CCNA(R & S) <br/> Technokraft Training & Solutions Nashik </td>
+                            </tr>
+                            <tr>
+                                <td>Year <br/> 2021 </td>
+                                <td>Certificate in Python for Machine Learning</td>
+                            </tr>
+                            <tr>
+                                <td>Year <br/> 2021 </td>
+                                <td>Certificate in Project Management </td>
+                            </tr>
+                            <tr>
+                                <td>Year <br/> 2021 </td>
+                                <td>Certificate in Excel for Beginners</td>
+                            </tr>
+                            <tr>
+                                <td>Year <br/> 2021 </td>
+                                <td>Certificate in Basic of Machine Learning </td>
+                            </tr>
+                            <tr>
+                                <td>Year <br/> 2022 </td>
+                                <td>Certificate Soft Skill Communication </td>
+                            </tr>
+                            <tr>
+                                <td>Year <br/> 2022 </td>
+                                <td>Certificate Network Security </td>
+                            </tr>
+                        </table>
+                   </div>
+              </div>
+         </div>
+
+         <div id="Experience" class="container-fluid">
+              <div class="row" id="ExperienceRow">
+                   <div class="col-lg-offset-5 col-md-offset-5 col-sm-offset-5 col-lg-6 col-md-6 col-sm-6 wow slideInRight" data-wow-duration="3s">
+                        <center><br /><h2><i class="fa fa-object-group"></i> Experience</h2><hr /></center>
+                        <table>
+                            <tr> 
+                                <td>Completed Intership in KCS IT Global as JAVA DEVELOPER  at Ahemdabad Feb 2022 to Aug 2022</td>
+                               
+                            </tr>
+                            
+                        </table>
+                   </div>
+              </div>
+         </div>
+
+         <div id="Portfolio" class="container-fluid wow bounceIn" data-wow-duration="3s">
+              <div class="row" id="PortfolioRow">
+                   <center><br /><h1><i class="fa fa-object-group"></i> My Certificate</h1><hr /></center>
+                   <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                        <div class="ContainerImage">
+                            <img src="D:\chetan\Images\01.jpg" alt="Chetan Chitte" class="image" />
+                            <div class="overlay">
+                            </div>
+                        </div>
+                   </div>
+                   <div class="col-lg-3 col-md-3 col-sm-4">
+                        <div class="ContainerImage">
+                            <img src="D:\chetan\Images\02.jpg" alt="Chetan Chitte" class="image" />
+                            <div class="overlay">
+                                 
+                            </div>
+                        </div>
+                   </div>
+                   <div class="col-lg-3 col-md-3 col-sm-4">
+                        <div class="ContainerImage">
+                            <img src="D:\chetan\Images\03.jpg" alt="Chetan Chitte" class="image" />
+                            <div class="overlay">
+                                 
+                            </div>
+                        </div>
+                   </div>
+                   <div class="col-lg-3 col-md-3 col-sm-4">
+                        <div class="ContainerImage">
+                            <img src="D:\chetan\Images\04.jpg" alt="Chetan Chitte" class="image" />
+                            <div class="overlay">
+                                 
+                            </div>
+                        </div>
+                   </div>
+                   <div class="col-lg-3 col-md-3 col-sm-4">
+                        <div class="ContainerImage">
+                            <img src="D:\chetan\Images\05.jpg" alt="Chetan Chitte" class="image" />
+                            <div class="overlay">
+                                 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                <div class="ContainerImage">
+                                    <img src="D:\chetan\Images\12.jpg" alt="Chetan Chitte" class="image"/>
+                                    <div class="overlay">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                <div class="ContainerImage">
+                                    <img src="D:\chetan\Images\13.jpg" alt="Chetan Chitte" class="image"/>
+                                     <div class="overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>                   
+              </div>
+         </div>
+
+         <div id="FreelancingRole" class="container-fluid wow bounceInUp" data-wow-duration="3s">
+              <div class="row" id="FreelancingRoleRow">
+                   <center><br /><h1><i class="fa fa-object-group"></i> My Freelancing Role</h1><hr /></center>
+                   <div class="col-lg-3 col-md-3 col-sm-4">
+                        <i class="fa fa-5x fa-users"></i><br />Clients<br />1
+                   </div>
+                   <div class="col-lg-3 col-md-3 col-sm-4">
+                        <i class="fa fa-5x fa-thumbs-up"></i><br />Projects<br />5
+                   </div>
+                   <div class="col-lg-3 col-md-3 col-sm-4">
+                        <i class="fa fa-5x fa-smile-o"></i><br />Experineces<br />
+                        <li>6 Month work Experience Intership as Java DEVELOPER in KCS IT Global at Ahemdabad</li> 
+                   </div>
+              </div>
+         </div>
+    </body>
+</html>
